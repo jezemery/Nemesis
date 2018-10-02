@@ -1,6 +1,6 @@
 <?php
 
-namespace SS_ACF\BaseFields;
+namespace Nemesis\ACF;
 
 /**
  * Class BaseFields

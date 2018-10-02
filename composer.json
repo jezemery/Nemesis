@@ -13,7 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SS_ACF\\": "src/classes/"
+      "Nemesis\\": "src/classes/"
     }
   },
   "scripts": {
