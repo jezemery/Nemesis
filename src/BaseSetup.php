@@ -3,6 +3,8 @@ namespace Nemesis;
 
 /**
  * Class BaseSetup
+ *
+ * This is for helpers only
  */
 class BaseSetup
 {
