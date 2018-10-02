@@ -6,7 +6,7 @@
     {
       "name": "Huginn Soup",
       "email": "dev@strawberrysoup.co.uk"
-    },
+    }
   ],
   "require": {
     "php": ">=7.0"
