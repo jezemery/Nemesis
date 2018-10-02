@@ -1,45 +1,20 @@
 {
   "name": "strawberrysoup/nemesis",
-  "type": "symfony-bundle",
+  "type": "metapackage",
   "description": "Nemesis Bundle",
   "authors": [
     {
-      "name": "Jez Emery",
-      "email": "jez@strawberrysoup.co.uk"
+      "name": "Huginn Soup",
+      "email": "dev@strawberrysoup.co.uk"
     },
-    {
-      "name": "Harry Wiseman",
-      "email": "harry@strawberrysoup.co.uk"
-    }
   ],
   "require": {
     "php": ">=7.0"
   },
-  "scripts": {
-    "post-root-package-install": [
-      "SymfonyStandard\\Composer::hookRootPackageInstall"
-    ],
-    "post-install-cmd": [
-      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
-    ],
-    "post-update-cmd": [
-      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
-    ]
-  },
-  "config": {
-    "bin-dir": "bin"
+  "autoload": {
+    "psr-4": {
+      "SS_ACF\\": "src/classes/"
+    }
   },
   "extra": {
     "branch-alias": {
