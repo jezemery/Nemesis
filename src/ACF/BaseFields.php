@@ -602,6 +602,31 @@ class BaseFields
     }
 
     /**
+     * Form ID field
+     * @param $prefix
+     * @param string $label
+     * @param int $conditions
+     * @param string $instructions
+     * @param string $defaultValue
+     * @param int $required
+     * @return array
+     */
+    public function formID($prefix, $label = 'Form ID', $conditions = 0, $instructions = 'Select the form you wish to be displayed on this page', $defaultValue = '', $required = 0)
+    {
+        return [
+            'key' => 'field_formid_' . $this->generateUniquePrefix($prefix, $label),
+            'label' => $label,
+            'name' => strtolower(str_replace(' ', '_', $label)),
+            'type' => 'select',
+            'instructions' => $instructions,
+            'required' => $required,
+            'conditional_logic' => $conditions,
+            'default_value' => $defaultValue,
+            'choices' => $this::list_gravity_forms()
+        ];
+    }
+
+    /**
      * Repeater field
      * @param array $args
      * @return array
