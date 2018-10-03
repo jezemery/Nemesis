@@ -70,7 +70,7 @@ class BaseFields
      * @param int $required
      * @return array
      */
-    public function wsiwyg($prefix, $label = 'Main content', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
+    public function wysiwyg($prefix, $label = 'Main content', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
     {
         return [
             'key' => 'field_main_content_' . $this->generateUniquePrefix($prefix, $label),
