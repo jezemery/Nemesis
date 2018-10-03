@@ -22,7 +22,8 @@ class BaseFields
      * @param int $required
      * @return array
      */
-    public function text($prefix, $label = 'Title', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0){
+    public function text($prefix, $label = 'Title', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
+    {
         return [
             'key' => 'field_text_' . $this->generateUniquePrefix($prefix, $label),
             'label' => $label,
@@ -241,7 +242,7 @@ class BaseFields
     public function image($prefix, $label = 'Image', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
     {
         return [
-            'key' => 'field_image_'  . $this->generateUniquePrefix($prefix, $label),
+            'key' => 'field_image_' . $this->generateUniquePrefix($prefix, $label),
             'label' => $label,
             'name' => strtolower(str_replace(' ', '_', $label)),
             'type' => 'image',
@@ -273,7 +274,7 @@ class BaseFields
     public function file($prefix, $label = 'File', $mimeTypes = '', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
     {
         return [
-            'key' => 'field_file_'  . $this->generateUniquePrefix($prefix, $label),
+            'key' => 'field_file_' . $this->generateUniquePrefix($prefix, $label),
             'label' => $label,
             'name' => strtolower(str_replace(' ', '_', $label)),
             'type' => 'file',
@@ -406,7 +407,7 @@ class BaseFields
      * @param int $required
      * @return array
      */
-    public function relationship($prefix, $label = 'Relationship', $multiple = 0, $postType = '', $taxonomy = '',  $return = 'object', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
+    public function relationship($prefix, $label = 'Relationship', $multiple = 0, $postType = '', $taxonomy = '', $return = 'object', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
     {
         return [
             'key' => 'field_relationship_' . $this->generateUniquePrefix($prefix, $label),
