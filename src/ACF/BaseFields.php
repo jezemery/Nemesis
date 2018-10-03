@@ -22,8 +22,7 @@ class BaseFields
      * @param int $required
      * @return array
      */
-    public function text($prefix, $label = 'Title', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0)
-    {
+    public function text($prefix, $label = 'Title', $conditions = 0, $instructions = '', $defaultValue = '', $required = 0){
         return [
             'key' => 'field_text_' . $this->generateUniquePrefix($prefix, $label),
             'label' => $label,
