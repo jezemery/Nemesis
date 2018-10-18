@@ -1,13 +1,10 @@
 <?php
 
-namespace Nemesis\ACF;
+namespace NanoSoup\Nemesis\ACF;
 
 /**
  * Class BaseFields
- *
- * Define the base fields to include within flexible layouts
- *
- * @package SS_ACF\Components
+ * @package NanoSoup\Nemesis\ACF
  */
 class BaseFields
 {

@@ -1,29 +1,16 @@
 # Nemesis Package
 
 ## What is this package?
-This package is to provide base classes for use when developing new websites.
+This package is to provide base classes for use when developing new websites with ACF.
 
 Common classes will include
 - Base fields for ACF
-- Helper functions we commonly use
-- Setup functions commonly used
 
 ## Using this package
-To use this package you will need to add the following to your sites `composer.json` file.
+To use this package you will need to run the following.
 
 ```
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:strawberrysoup/nemesis.git"
-        }
-    ],
-    "require": {
-        "strawberrysoup/nemesis": "dev-master"
-    }
-}
-
+composer require nanosoup/nemesis
 ```
 
 This will install the package based on the current state of the master branch.
@@ -37,31 +24,19 @@ You can then use the classes within your website like this:
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Strawberrypress
+ * @package ThemeName
  */
 
-namespace SS_SETUP;
+namespace ThemeName\Namespace;
 
-use Nemesis\BaseSetup;
+use NanoSoup\Nemesis\BaseFields;
 
 /**
- * Class Setup
- *
- * Includes most of the core setup for Setup WP Theme.
+ * Class ACFFields
  */
-class Setup extends BaseSetup
+class ACFFields extends BaseFields
 {
-
-    /**
-     * Function to register actions / filters using other custom functions
-     * within this class
-     *
-     */
-    public function init()
-    {
-
-    }
-
+    ...
 }
 
 ```
