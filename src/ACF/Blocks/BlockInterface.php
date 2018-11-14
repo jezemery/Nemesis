@@ -1,6 +1,6 @@
 <?php
 
-namespace NanoSoup\Nemesis\ACF;
+namespace NanoSoup\Nemesis\ACF\Blocks;
 
 /**
  * Interface BlockInterface
