@@ -28,5 +28,5 @@ interface BlockInterface
      * @param $block
      * @return mixed
      */
-    public function renderBlock($block);
+    public static function renderBlock($block);
 }
