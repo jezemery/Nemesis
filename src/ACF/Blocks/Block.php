@@ -42,10 +42,19 @@ class Block
      * @var
      */
     public $catName = '';
+
     /**
      * @var
      */
     public $catSlug = 'common';
+
+    /**
+     * Block constructor.
+     */
+    public function __construct()
+    {
+        $this->blockCallback = [get_called_class(), 'renderBlock'];
+    }
 
     /**
      * @param mixed $blockName
