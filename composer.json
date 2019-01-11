@@ -8,7 +8,7 @@
     },
     {
       "name": "Jez Emery",
-      "email": "jez@hiohzo.com"
+      "email": "github@hiohzo.com"
     }
   ],
   "require": {
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "NanoSoup\\Nemesis\\": "src/classes/"
+      "NanoSoup\\Nemesis\\": "src/"
     }
   }
 }
